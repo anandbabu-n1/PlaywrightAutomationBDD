@@ -16,7 +16,7 @@ private Page page;
     public TagsInputBoxPage(Page page) {
         this.page = page;
         this.TOTAL_NUMBER=page.locator("//div[@class='details']//span[1]");
-        this.TAG_FIELD=page.locator("//div[@class='contet']//input[1]");
+        this.TAG_FIELD=page.locator("//div[@class='content']//input[1]");
     }
 	
     public void getTotalNumber() {

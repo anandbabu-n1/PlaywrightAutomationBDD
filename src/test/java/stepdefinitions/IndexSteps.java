@@ -43,6 +43,13 @@ public class IndexSteps {
         	break;
         case("download file"):
         	IndexPage.clickDownloadFile();
+        	break;
+        case("mouse hover"):
+        	IndexPage.clickMouseHover();
+        	break;
+        case("iframe"):
+        	IndexPage.clickIframe();
+        	break;
         }
         
         
