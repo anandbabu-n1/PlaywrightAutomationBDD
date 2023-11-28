@@ -30,6 +30,8 @@ public class IndexPage {
     private final Locator DOWNLOAD_FILE;
     private final Locator DOWNLOAD_BUTTON;
     private final Locator UPLOAD_BUTTON;
+    private final Locator MOUSE_HOVER;
+    private final Locator Iframe;
     
 
     public IndexPage(Page page) {
@@ -43,7 +45,8 @@ public class IndexPage {
         this.POPUP=page.locator("//h3[text()='Pop-Up Window']");
         this.UPLOAD_FILE=page.locator("//h3[text()='Upload File']");
         this.DOWNLOAD_FILE=page.locator("//h3[text()='Download File']");
-      
+        this.MOUSE_HOVER=page.locator("//h3[text()='Mouse Hover']");
+        this.Iframe=page.locator("//h3[text()='Nested Iframe']");
         this.DOWNLOAD_BUTTON=page.locator(null);
         this.UPLOAD_BUTTON=page.locator(null);
         
@@ -106,7 +109,15 @@ public class IndexPage {
 		
 	}
 
+    public void clickMouseHover() {
+		// TODO Auto-generated method stub
+		MOUSE_HOVER.click();
+	}
     
+    public void clickIframe() {
+		// TODO Auto-generated method stub
+		Iframe.click();
+	}
 
     public void clickOnIcon(String iconName) {
         this.page.getByText(iconName, new Page.GetByTextOptions().setExact(true)).click();  // Clicks on the Exact text
@@ -122,6 +133,7 @@ public class IndexPage {
         // Save downloaded file in Downloads directory
         download.saveAs(Paths.get(downloadsDirectory + download.suggestedFilename()));
     }
+	
 	
 	
 
