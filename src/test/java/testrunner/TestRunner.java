@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		features = {"src/test/resources/features/"},
 		glue = {"stepdefinitions", "hooks"},
 		dryRun=false,
-		tags = "@iframe",
+		tags = "@filedownload",
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/rerun.txt"  // Save Failed test scenarios in rerun.txt file
