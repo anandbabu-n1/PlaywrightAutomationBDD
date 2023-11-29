@@ -1,17 +1,6 @@
 /target/
-target/PdfReport/ToolsQA.pdf
-target/HTMLReport/ToolsQA.html
-Downloads/sample.pdf
+Downloads/
 .settings/org.eclipse.m2e.core.prefs
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.core.resources.prefs
 .classpath
-target/classes/META-INF/maven/com.qa.playwrightbdd/PlaywrightAutomationwithBDD/pom.properties
-target/HTMLReport/ToolsQA.html
-target/PdfReport/ToolsQA.pdf
-target/HTMLReport/ToolsQA.html
-target/PdfReport/ToolsQA.pdf
-target/test-classes/testrunner/TestRunner.class
-target/test-classes/testrunner/ReRunner.class
-target/_A_d_d_ _a_n_d_ _r_e_m_o_v_e_ _t_a_g_s_ _a_n_d_ _a_s_s_e_r_t_ _t_a_g_'_s_ _p_r_e_s_e_n_c_e_ _a_n_d_ _c_o_u_n_t_.zip
-target/_E_n_t_e_r_ _v_a_l_i_d_ _c_o_d_e_ _b_y_ _p_r_e_s_s_i_n_g_ _t_h_e_ _k_e_y_-_u_p_ _b_u_t_t_o_n_ _o_r_ _t_y_p_i_n_g_ _n_u_m_b_e_r_ _a_n_d_ _a_s_s_e_r_t_ _s_u_c_c_e_s_s_ _m_e_s_s_a_g_e_.zip
