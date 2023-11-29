@@ -4,8 +4,6 @@ import com.microsoft.playwright.FrameLocator;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
-import utils.WebActions;
-
 public class IframePage {
 private Page page;
 
