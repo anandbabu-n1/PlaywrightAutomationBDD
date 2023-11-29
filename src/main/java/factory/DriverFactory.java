@@ -1,7 +1,6 @@
 package factory;
 
 import com.microsoft.playwright.*;
-import utils.WebActions;
 
 public class DriverFactory {
     public Browser browser;
@@ -14,7 +13,7 @@ public class DriverFactory {
     //Launches Browser as set by user in config file
     public Page initDriver(String browserName) {
         BrowserType browserType = null;
-        boolean headless = Boolean.valueOf(WebActions.getProperty("headless"));
+        boolean headless = Boolean.valueOf(utilities.WebActions.getProperty("headless"));
         switch (browserName) {
             case "firefox":
                 browserType = Playwright.create().firefox();

@@ -2,8 +2,6 @@ package utilities;
 
 import com.microsoft.playwright.Locator;
 
-import utils.ConfigReader;
-
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;

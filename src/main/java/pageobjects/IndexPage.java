@@ -14,7 +14,8 @@ import com.microsoft.playwright.Download;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Mouse;
 import com.microsoft.playwright.Page;
-import utils.WebActions;
+
+import utilities.WebActions;
 
 public class IndexPage {
     private Page page;

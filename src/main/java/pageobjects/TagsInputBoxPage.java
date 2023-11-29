@@ -3,8 +3,6 @@ package pageobjects;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
-import utils.WebActions;
-
 public class TagsInputBoxPage {
 private Page page;
     private static int num=0;
