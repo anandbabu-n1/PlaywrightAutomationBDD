@@ -114,15 +114,15 @@
                     <execution>
                         <goals>
                             <goal>integration-test</goal>
+                            <goal>verify</goal>
                         </goals>
                         <configuration>
                             <includes>
-                                <include>**/TestRunner.java</include>
-                                
+                                <include>**/MyRunnerTestIT.java</include>
                             </includes>
                             <parallel>methods</parallel>
-                            <threadCount>4</threadCount>
-                            <perCoreThreadCount>true</perCoreThreadCount>
+                            <threadCount>2</threadCount>
+                            <perCoreThreadCount>false</perCoreThreadCount>
                             <skipTests>${skip.ut}</skipTests>
                         </configuration>
                     </execution>
