@@ -9,15 +9,15 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 		// Rerun failed tests from rerun.txt file
 		features = {"src/test/resources/features/"},
-		glue = {"stepdefinitions", "hooks"},
-		dryRun=true,
-		tags = "@api1",
+		glue = {"stepdefinitions", "apihooks"},
+		dryRun=false,
+		tags = "@api6",
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/rerun.txt"  // Save Failed test scenarios in rerun.txt file
 		}
 		)
 
-public class MyRunnerTestIT {
+public class MyRunnerApiTestIT {
 	
 }
