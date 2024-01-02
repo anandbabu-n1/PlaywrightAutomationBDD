@@ -50,6 +50,9 @@ public class IndexSteps {
         case("iframe"):
         	IndexPage.clickIframe();
         	break;
+        case("qr code generator"):
+        	IndexPage.clickQrCode();
+        	break;
         }
         
         

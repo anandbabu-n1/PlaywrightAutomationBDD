@@ -33,6 +33,7 @@ public class IndexPage {
     private final Locator UPLOAD_BUTTON;
     private final Locator MOUSE_HOVER;
     private final Locator Iframe;
+    private final Locator QrCode;
     
 
     public IndexPage(Page page) {
@@ -50,6 +51,7 @@ public class IndexPage {
         this.Iframe=page.locator("//h3[text()='Nested Iframe']");
         this.DOWNLOAD_BUTTON=page.locator(null);
         this.UPLOAD_BUTTON=page.locator(null);
+        this.QrCode=page.locator("//h3[text()='QR Code Generator']");
         
     }
     public void navigateToUrl(String url) {
@@ -119,6 +121,11 @@ public class IndexPage {
 		// TODO Auto-generated method stub
 		Iframe.click();
 	}
+    
+    public void clickQrCode() {
+		QrCode.click();
+		
+	}
 
     public void clickOnIcon(String iconName) {
         this.page.getByText(iconName, new Page.GetByTextOptions().setExact(true)).click();  // Clicks on the Exact text
@@ -134,6 +141,7 @@ public class IndexPage {
         // Save downloaded file in Downloads directory
         download.saveAs(Paths.get(downloadsDirectory + download.suggestedFilename()));
     }
+	
 	
 	
 	
